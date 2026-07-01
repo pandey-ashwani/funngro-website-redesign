@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const isActive = navMenu.classList.toggle('active');
       mobileMenu.classList.toggle('active');
       mobileMenu.setAttribute('aria-expanded', isActive);
+      
+      // Toggle background scrolling
+      if (isActive) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
     });
 
     // Close menu when a link is clicked
@@ -19,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.classList.remove('active');
         mobileMenu.classList.remove('active');
         mobileMenu.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = ''; // Restore scrolling
       });
     });
 
@@ -28,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.classList.remove('active');
         mobileMenu.classList.remove('active');
         mobileMenu.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = ''; // Restore scrolling
       }
     });
   }
