@@ -12,168 +12,250 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
+    <div class="logo">
+        <a href="index.html">
+            <img src="assets/icons/funngro-logo-removebg-preview.png" alt="Funngro Logo">
+        </a>
+    </div>
 
-<div class="logo">
-    <a href="#home">
-        <img src="assets/icons/funngro-logo-removebg-preview.png" alt="Funngro Logo">
-    </a>
-</div>
+    <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
 
-<button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation" aria-expanded="false">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-</button>
+    <div class="nav-menu" id="nav-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="company.html">For Brands</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#stats">Results</a></li>
+            <li><a href="#stories">Outcomes</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
-<div class="nav-menu" id="nav-menu">
-    <ul>
-        <li><a href="index.html">Earn</a></li>
-        <li><a href="company.html">For Brands</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#how">How It Works</a></li>
-        <li><a href="#stats">Results</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <a href="https://www.funngro.com/" target="_blank" class="btn no-hover">
-        Contact Sales
-    </a>
-</div>
-
+        <div class="nav-buttons">
+            <a href="#contact" class="btn btn-secondary">Talk to Sales</a>
+            <a href="https://www.funngro.com/" target="_blank" class="btn btn-primary">Get Started</a>
+        </div>
+    </div>
 </nav>
 
 <section id="home" class="hero">
     <div class="glow-blob blob-hero-left"></div>
 
-    <div class="hero-text hero-fade-in">
-        <h1>
-            Work with <span class="gradient-text">70 Lakh+</span>
-            <br>
-            Young Indians
-        </h1>
+    <div class="hero-content">
+        <div class="hero-text hero-fade-in">
+            <span class="eyebrow">B2B / FOR BRANDS</span>
+            <h1>
+                Work with 70 lakh young Indians
+                <br>
+                on the things <em>brands actually need.</em>
+            </h1>
 
-        <p class="hero-fade-in-delayed">
-            Promotion, sampling, content creation, surveys,
-            influencer campaigns, app testing and much more —
-            all from a verified community of talented students.
-        </p>
+            <p class="hero-fade-in-delayed">
+                Promotions, sampling, content creation, surveys, influencer campaigns, app testing and much more — all from a verified community of 13-25 year olds.
+            </p>
 
-        <a href="#services" class="hero-btn hero-fade-in-delayed">Start Hiring</a>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    Hire talented youth
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="#services" class="btn btn-secondary">Talk to sales</a>
+            </div>
+        </div>
     </div>
 
-    <div class="hero-image hero-image-zoom">
-        <img src="assets/images/hero.jpg" alt="Students working together">
+    <div class="hero-stats">
+        <div class="hero-stat">
+            <h2 class="stat-number" data-target="70" data-suffix=" Lakh+">0</h2>
+            <p>Verified Community</p>
+        </div>
+        <div class="hero-stat">
+            <h2 class="stat-number" data-target="5000" data-suffix="+">0</h2>
+            <p>Brands Onboarded</p>
+        </div>
+        <div class="hero-stat">
+            <h2 class="stat-number" data-target="1000" data-suffix="+">0</h2>
+            <p>Live Campaigns Daily</p>
+        </div>
+        <div class="hero-stat">
+            <h2 class="stat-number" data-target="12" data-suffix="+">0</h2>
+            <p>Work Categories</p>
+        </div>
     </div>
 </section>
 
-<section id="why" class="features reveal">
-    <h2 class="reveal">Why Brands Choose Funngro?</h2>
-
-    <div class="cards">
-        <div class="card reveal reveal-delay-1">
-            <h3>🎯 Reach Young India</h3>
-            <p>Connect with millions of verified students across India.</p>
-        </div>
-
-        <div class="card reveal reveal-delay-2">
-            <h3>📢 Brand Promotion</h3>
-            <p>Launch campaigns, referrals and influencer marketing with ease.</p>
-        </div>
-
-        <div class="card reveal reveal-delay-3">
-            <h3>📈 Measurable Results</h3>
-            <p>Track campaign performance with verified actions and real engagement.</p>
-        </div>
-
-        <div class="card reveal reveal-delay-4">
-            <h3>📊 Surveys & Insights</h3>
-            <p>Collect valuable feedback and market insights from verified young users.</p>
-        </div>
-    </div>
+<section class="features reveal">
+    <div class="glow-blob blob-hero-right"></div>
+    <span class="eyebrow">OUR EDGE / ACTION OVER REACH</span>
+    <h2 class="reveal">Reach is plentiful. <em>Real action is scarce.</em></h2>
+    <p class="section-desc">Instead of passive views, buy verified actions from real people. From installing apps and filling surveys to posting content, buy results not impressions.</p>
 </section>
 
 <section id="services" class="features reveal">
-    <h2 class="reveal">Our Services</h2>
+    <span class="eyebrow">SERVICES / CAMPAIGN TYPES</span>
+    <h2 class="reveal">Pick what you need. We'll match <em>the right cohort.</em></h2>
+    <p class="section-desc">Choose from our suite of youth marketing, product evaluation, and operations services.</p>
 
-    <div class="cards">
-        <div class="card reveal reveal-delay-1">
-            <h3>📣 Brand Promotion</h3>
-            <p>Promote your products through verified student communities.</p>
+    <div class="services-grid">
+        <div class="service-card reveal reveal-delay-1">
+            <div class="service-num">01</div>
+            <div class="service-info">
+                <h3>Content creation</h3>
+                <p>User generated reels, videos, design assets, and blogs.</p>
+            </div>
         </div>
 
-        <div class="card reveal reveal-delay-2">
-            <h3>🎥 Content Creation</h3>
-            <p>Get user-generated content for social media and marketing campaigns.</p>
+        <div class="service-card reveal reveal-delay-2">
+            <div class="service-num">02</div>
+            <div class="service-info">
+                <h3>Campus campaigns</h3>
+                <p>Deploy college ambassadors to drive word-of-mouth.</p>
+            </div>
         </div>
 
-        <div class="card reveal reveal-delay-3">
-            <h3>📱 App Testing</h3>
-            <p>Receive real feedback from young users before launching your app.</p>
+        <div class="service-card reveal reveal-delay-3">
+            <div class="service-num">03</div>
+            <div class="service-info">
+                <h3>Influencer relations</h3>
+                <p>Nano and micro-influencer campaigns with high engagement.</p>
+            </div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-1">
+            <div class="service-num">04</div>
+            <div class="service-info">
+                <h3>Local community</h3>
+                <p>Promote brands locally within specific cities and colleges.</p>
+            </div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+            <div class="service-num">05</div>
+            <div class="service-info">
+                <h3>Beta testing & UX</h3>
+                <p>Get real feedback on app bugs and user experience issues.</p>
+            </div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-3">
+            <div class="service-num">06</div>
+            <div class="service-info">
+                <h3>User research & surveys</h3>
+                <p>Gather detailed insights and feedback from teenagers.</p>
+            </div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-1">
+            <div class="service-num">07</div>
+            <div class="service-info">
+                <h3>App downloads</h3>
+                <p>Acquire verified app installs from target users.</p>
+            </div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+            <div class="service-num">08</div>
+            <div class="service-info">
+                <h3>Review & feedback</h3>
+                <p>Improve store ratings with verified constructive reviews.</p>
+            </div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-3">
+            <div class="service-num">09</div>
+            <div class="service-info">
+                <h3>Offline promotions</h3>
+                <p>Execute physical flyers distribution, events, and sampling.</p>
+            </div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-1">
+            <div class="service-num">10</div>
+            <div class="service-info">
+                <h3>Developer recruitment</h3>
+                <p>Find young tech talent for coding projects and hacks.</p>
+            </div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+            <div class="service-num">11</div>
+            <div class="service-info">
+                <h3>Content moderation</h3>
+                <p>Manage community groups and flag inappropriate content.</p>
+            </div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-3">
+            <div class="service-num">12</div>
+            <div class="service-info">
+                <h3>Retail audit & sampling</h3>
+                <p>Verify store stock displays and distribute samples.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="how" class="how-it-works reveal">
-    <h2 class="reveal">How It Works</h2>
+<section class="features reveal">
+    <span class="eyebrow">INDUSTRIES / SECTOR COVERAGE</span>
+    <h2 class="reveal">From <em>fintech</em> to <em>FMCG.</em></h2>
+    <p class="section-desc">Customized solution templates for brands across all sectors.</p>
 
-    <div class="steps">
-        <div class="step reveal reveal-delay-1">
-            <div class="number">1</div>
-            <h3>Create Your Brand Account</h3>
-            <p>Create your company account and tell us about your business.</p>
-        </div>
-
-        <div class="step reveal reveal-delay-2">
-            <div class="number">2</div>
-            <h3>Post Your Campaign</h3>
-            <p>Publish your campaign with objectives, budget, and timeline.</p>
-        </div>
-
-        <div class="step reveal reveal-delay-3">
-            <div class="number">3</div>
-            <h3>Receive Applications</h3>
-            <p>Receive applications from talented and verified students.</p>
-        </div>
-
-        <div class="step reveal reveal-delay-4">
-            <div class="number">4</div>
-            <h3>Track Results</h3>
-            <p>Launch your campaign, monitor progress, and measure results.</p>
-        </div>
+    <div class="pills-container reveal">
+        <span class="pill">Fintech</span>
+        <span class="pill">Edtech</span>
+        <span class="pill">FMCG</span>
+        <span class="pill">D2C</span>
+        <span class="pill">Gaming</span>
+        <span class="pill">Web3</span>
+        <span class="pill">Social Media</span>
+        <span class="pill">E-commerce</span>
+        <span class="pill">Apps</span>
+        <span class="pill">Health & Fitness</span>
+        <span class="pill">Software</span>
+        <span class="pill">Others</span>
     </div>
 </section>
 
-<section id="stats" class="stats reveal">
-    <div class="glow-blob blob-hero-right"></div>
+<section id="stats" class="features reveal">
+    <span class="eyebrow">CASE STUDIES / METRICS</span>
+    <h2 class="reveal">What brands <em>typically see.</em></h2>
+    <p class="section-desc">Verifiable numbers from our active brand partners.</p>
 
-    <div class="stat reveal reveal-delay-1">
-        <h2 class="stat-number" data-target="70" data-suffix=" Lakh+">0</h2>
-        <p>Young Indians</p>
-    </div>
+    <div class="metrics-grid">
+        <div class="metric-card reveal reveal-delay-1">
+            <div class="metric-val">42%</div>
+            <p>higher conversion rates compared to standard ads</p>
+        </div>
 
-    <div class="stat reveal reveal-delay-2">
-        <h2 class="stat-number" data-target="5000" data-suffix="+">0</h2>
-        <p>Brands</p>
-    </div>
+        <div class="metric-card reveal reveal-delay-2">
+            <div class="metric-val">68%</div>
+            <p>lower customer acquisition costs (CAC)</p>
+        </div>
 
-    <div class="stat reveal reveal-delay-3">
-        <h2 class="stat-number" data-target="1000" data-suffix="+">0</h2>
-        <p>Live Projects</p>
-    </div>
+        <div class="metric-card reveal reveal-delay-3">
+            <div class="metric-val">100%</div>
+            <p>verified action delivery guarantee</p>
+        </div>
 
-    <div class="stat reveal reveal-delay-4">
-        <h2 class="stat-number" data-target="12" data-suffix="+">0</h2>
-        <p>Work Categories</p>
+        <div class="metric-card reveal reveal-delay-4">
+            <div class="metric-val">3x</div>
+            <p>faster campaign turnaround times</p>
+        </div>
     </div>
 </section>
 
 <section id="stories" class="features reveal">
+    <span class="eyebrow">SUCCESS OUTCOMES / STORIES</span>
     <h2 class="reveal">Company Outcomes</h2>
+    <p class="section-desc">Read about how startups and established brands are leveraging Funngro for growth.</p>
 
     <div class="cards">
         <div class="card reveal reveal-delay-1">
@@ -193,11 +275,64 @@
     </div>
 </section>
 
-<footer id="contact" class="reveal">
+<section id="contact" class="features reveal">
     <div class="glow-blob blob-footer"></div>
-    <h2>Funngro</h2>
-    <p>Helping brands connect with talented young Indians through real-world campaigns.</p>
-    <p>© 2026 Funngro Clone | Created by Ashwani Pandey</p>
+    <span class="eyebrow">GET IN TOUCH / COLLABORATE</span>
+    <h2 class="reveal">Tell us what you're <em>trying to do.</em></h2>
+    <p class="section-desc">Reach out to our campaign specialists to design your custom brand project.</p>
+
+    <div class="hero-buttons">
+        <a href="https://www.funngro.com/" target="_blank" class="btn btn-primary">Get started</a>
+        <a href="mailto:brands@funngro.com" class="btn btn-secondary">Contact sales team</a>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="glow-blob blob-footer"></div>
+    <div class="footer-column">
+        <h2>Funngro</h2>
+        <p>Helping brands connect with talented young Indians through real-world campaigns with verified action delivery.</p>
+    </div>
+
+    <div class="footer-column">
+        <h3>Students</h3>
+        <ul>
+            <li><a href="index.html#how">How it Works</a></li>
+            <li><a href="index.html#why">Our Principles</a></li>
+            <li><a href="index.html#stories">Success Stories</a></li>
+            <li><a href="https://www.funngro.com/" target="_blank">Download App</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        <h3>Brands</h3>
+        <ul>
+            <li><a href="company.html">For Brands</a></li>
+            <li><a href="company.html#services">Services Grid</a></li>
+            <li><a href="company.html#stats">Metrics & Results</a></li>
+            <li><a href="company.html#contact">Hire Youth</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        <h3>Legal</h3>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Security Guidelines</a></li>
+            <li><a href="#">Support Helpdesk</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Funngro Clone | Created by Ashwani Pandey</p>
+        <div class="footer-bottom-links">
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+            <a href="#">GitHub</a>
+        </div>
+    </div>
 </footer>
 
 <script src="script.js"></script>

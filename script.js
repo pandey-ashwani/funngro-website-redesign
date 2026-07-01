@@ -89,4 +89,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     statNumbers.forEach(num => statsObserver.observe(num));
   }
+
+  // --- FAQ Accordion ---
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  
+  if (faqQuestions.length > 0) {
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const isActive = item.classList.contains('active');
+        
+        // Close all other FAQ items
+        document.querySelectorAll('.faq-item').forEach(faqItem => {
+          faqItem.classList.remove('active');
+          const icon = faqItem.querySelector('.faq-icon');
+          if (icon) icon.textContent = '+';
+        });
+        
+        // Toggle current FAQ item
+        if (!isActive) {
+          item.classList.add('active');
+          const icon = question.querySelector('.faq-icon');
+          if (icon) icon.textContent = '−';
+        }
+      });
+    });
+  }
 });
